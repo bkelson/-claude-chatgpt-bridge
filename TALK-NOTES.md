@@ -314,6 +314,8 @@ I'll take that trade every time.
 *Thank you.*
 
 **Resources:**
-- GitHub: [Link to repo]
-- SETUP-GUIDE.md for replication
+- GitHub: [claude-chatgpt-bridge](https://github.com/bkelson/-claude-chatgpt-bridge)
+- [SETUP-GUIDE.md](https://github.com/bkelson/-claude-chatgpt-bridge/blob/main/SETUP-GUIDE.md) - The clean path to a working system
+- [RESUME-SESSION.md](https://github.com/bkelson/-claude-chatgpt-bridge/blob/main/RESUME-SESSION.md) - Technical reference
+- [TALK-NOTES.md](https://github.com/bkelson/-claude-chatgpt-bridge/blob/main/TALK-NOTES.md) - This talk
 - Happy to connect: [Contact info]
