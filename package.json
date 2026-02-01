@@ -1,0 +1,41 @@
+{
+  "name": "claude-chatgpt-bridge",
+  "version": "1.0.0",
+  "description": "MCP server enabling file sharing and communication between Claude and ChatGPT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claude-chatgpt-bridge": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:oauth": "node dist/oauth-server.js",
+    "dev": "tsc && node dist/index.js",
+    "start:http": "node dist/index.js --http",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "chatgpt",
+    "bridge"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-jwt": "^8.5.1",
+    "jsonwebtoken": "^9.0.3",
+    "jwks-rsa": "^3.2.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.10",
+    "typescript": "^5.9.3"
+  }
+}
