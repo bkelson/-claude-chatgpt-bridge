@@ -9,8 +9,14 @@ echo "🚀 Starting Claude-ChatGPT Bridge..."
 echo ""
 
 # Configuration
-AUTH0_DOMAIN="YOUR_AUTH0_DOMAIN"
-AUTH0_AUDIENCE="https://claude-chatgpt-bridge"
+AUTH0_DOMAIN="${AUTH0_DOMAIN:-}"
+AUTH0_AUDIENCE="${AUTH0_AUDIENCE:-https://claude-chatgpt-bridge}"
+
+if [ -z "$AUTH0_DOMAIN" ]; then
+    echo "❌ Error: AUTH0_DOMAIN environment variable is not set."
+    echo "Set it before running: export AUTH0_DOMAIN=\"your-domain.us.auth0.com\""
+    exit 1
+fi
 PORT=3000
 PROJECT_DIR="$HOME/claude_sandbox/claude-chatgpt-bridge"
 

@@ -1,11 +1,16 @@
 # Claude-ChatGPT Bridge: Session Summary
 
-**Last Updated:** 2026-01-30 ~12:00 PM
+**Last Updated:** 2026-02-02
 **Status:** ✅ FULLY OPERATIONAL
 
 ## Project Location
 ```
 ~/claude_sandbox/claude-chatgpt-bridge/
+```
+
+## GitHub Repository
+```
+git@github.com:bkelson/-claude-chatgpt-bridge.git
 ```
 
 ## What We Built
@@ -78,9 +83,9 @@ After starting, copy the tunnel URL from the output and update it in:
 - **Allow Skipping User Consent:** ON
 
 ### Application Settings (ChatGPT MCP Client v2)
-- **Auth0 Domain:** `YOUR_AUTH0_DOMAIN`
+- **Auth0 Domain:** `<YOUR_AUTH0_DOMAIN>` (see .env or Auth0 dashboard)
 - **Application Type:** Regular Web Application
-- **Client ID:** `YOUR_CLIENT_ID`
+- **Client ID:** `<YOUR_CLIENT_ID>` (see .env or Auth0 dashboard)
 - **Callback URL:** `https://chatgpt.com/connector_platform_oauth_redirect`
 - **Grant Types:** Authorization Code, Client Credentials
 - **User Access:** Authorized with both scopes
@@ -129,7 +134,7 @@ Shared Directory
 ## Environment Variables
 
 ```bash
-AUTH0_DOMAIN="YOUR_AUTH0_DOMAIN"
+AUTH0_DOMAIN="<YOUR_AUTH0_DOMAIN>"
 AUTH0_AUDIENCE="https://claude-chatgpt-bridge"
 PUBLIC_URL="https://your-tunnel.trycloudflare.com"
 PORT=3000
