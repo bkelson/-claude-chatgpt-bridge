@@ -30,6 +30,7 @@ A fully functional OAuth-authenticated MCP (Model Context Protocol) server that 
 ### Start Everything
 ```bash
 cd ~/claude_sandbox/claude-chatgpt-bridge
+export AUTH0_DOMAIN="<YOUR_AUTH0_DOMAIN>"   # required — get from Auth0 dashboard
 ./start.sh
 ```
 
@@ -240,7 +241,7 @@ curl -s $(cat /tmp/current-tunnel-url.txt)/.well-known/oauth-protected-resource
 I have a working Claude-ChatGPT Bridge with OAuth authentication.
 The setup is in ~/claude_sandbox/claude-chatgpt-bridge/
 
-To start: ./start.sh
+To start: export AUTH0_DOMAIN="<your-domain>" && ./start.sh
 To stop: ./stop.sh
 
 All details are in RESUME-SESSION.md and SETUP-GUIDE.md
